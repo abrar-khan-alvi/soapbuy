@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     rating: 5.0,
     reviews: 18,
     category: "Gift Sets",
-    description: "A handpicked selection of our top 4 soap bars and a bamboo drainage dish. The perfect introduction to the world of PureBar or a thoughtful gift for a loved one.",
+    description: "A handpicked selection of our top 4 soap bars and a bamboo drainage dish. The perfect introduction to the world of Global Nest or a thoughtful gift for a loved one.",
     img: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=600",
     images: [
       "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=600"

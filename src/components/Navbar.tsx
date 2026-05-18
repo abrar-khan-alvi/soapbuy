@@ -51,7 +51,7 @@ export default function Navbar() {
       {/* Main Nav */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Mobile Toggle */}
-        <button 
+        <button
           onClick={() => setIsMobileMenuOpen(true)}
           className="md:hidden text-gray-700 hover:text-yellow-600 transition-colors p-2"
         >
@@ -59,9 +59,8 @@ export default function Navbar() {
         </button>
 
         {/* Logo */}
-        <Link to="/" className="flex flex-col items-center hover:opacity-90 transition-opacity">
-          <span className="text-yellow-500 font-serif font-bold text-2xl md:text-3xl leading-none">PUREBAR</span>
-          <span className="text-yellow-500 text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.3em]">SOAP</span>
+        <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <img src="/logo.png" alt="Global Nest Logo" className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop Nav Links */}
@@ -73,13 +72,13 @@ export default function Navbar() {
                 <ChevronDown size={14} className="ml-1 text-gray-400 group-hover/nav:text-black transition-transform group-hover/nav:rotate-180" />
               </div>
               <div className="absolute top-full left-0 right-0 h-0.5 bg-blue-500 scale-x-0 group-hover/nav:scale-x-100 transition-transform origin-left duration-300"></div>
-              
+
               {/* Dropdown */}
               <div className="absolute top-[calc(100%+8px)] left-0 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-200 z-50 py-3 border border-gray-100">
                 {cat.items.map((item, i) => (
-                  <Link 
-                    key={i} 
-                    to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`} 
+                  <Link
+                    key={i}
+                    to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`}
                     className="block px-5 py-2.5 text-[13px] text-gray-600 hover:text-black hover:bg-gray-50 transition-colors"
                   >
                     {item}
@@ -94,7 +93,7 @@ export default function Navbar() {
 
         {/* Right Icons */}
         <div className="flex items-center space-x-3 md:space-x-5">
-          <button 
+          <button
             onClick={() => setIsSearchOpen(true)}
             className="text-gray-700 hover:text-yellow-600 transition-colors p-1 hidden sm:block"
           >
@@ -120,19 +119,19 @@ export default function Navbar() {
       {/* Search Overlay */}
       {isSearchOpen && (
         <div className="fixed inset-0 z-[70] bg-white/95 backdrop-blur-md flex items-center justify-center animate-in fade-in duration-300">
-          <button 
+          <button
             onClick={() => setIsSearchOpen(false)}
             className="absolute top-10 right-10 p-3 text-gray-400 hover:text-black transition-colors"
           >
             <X size={32} />
           </button>
-          
+
           <div className="w-full max-w-2xl px-6">
             <form onSubmit={handleSearch} className="relative">
-              <input 
+              <input
                 autoFocus
-                type="text" 
-                placeholder="What are you looking for?" 
+                type="text"
+                placeholder="What are you looking for?"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-transparent border-b-4 border-gray-100 text-3xl md:text-5xl font-serif py-6 focus:outline-none focus:border-yellow-400 transition-colors pr-16"
@@ -144,7 +143,7 @@ export default function Navbar() {
             <div className="mt-8 flex flex-wrap gap-4">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-widest w-full mb-2">Popular Searches</span>
               {['Lavender', 'Glow', 'Brightening', 'Bar Soaps', 'Gift Sets'].map((tag) => (
-                <button 
+                <button
                   key={tag}
                   onClick={() => {
                     setSearchQuery(tag);
@@ -164,11 +163,11 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm md:hidden" onClick={() => setIsMobileMenuOpen(false)}>
-          <div 
+          <div
             className="absolute top-0 left-0 w-4/5 max-w-sm h-full bg-white shadow-2xl flex flex-col pt-20 px-6 animate-in slide-in-from-left duration-300"
             onClick={(e) => e.stopPropagation()}
           >
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="absolute top-6 right-6 p-2 text-gray-400 hover:text-black transition-colors"
             >
@@ -181,8 +180,8 @@ export default function Navbar() {
                   <h3 className="text-xs font-bold tracking-widest text-gray-400 uppercase">{cat.title}</h3>
                   <div className="flex flex-col space-y-3 pl-4 border-l border-gray-100">
                     {cat.items.slice(0, 4).map((item, i) => (
-                      <Link 
-                        key={i} 
+                      <Link
+                        key={i}
                         to={`/category/${item.toLowerCase().replace(/\s+/g, '-')}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="text-gray-700 hover:text-yellow-600 font-medium"
@@ -190,7 +189,7 @@ export default function Navbar() {
                         {item}
                       </Link>
                     ))}
-                    <Link 
+                    <Link
                       to={`/category/${cat.title.toLowerCase().replace(/\s+/g, '-')}`}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="text-yellow-600 text-sm font-bold pt-1"
@@ -200,7 +199,7 @@ export default function Navbar() {
                   </div>
                 </div>
               ))}
-              
+
               <div className="pt-6 border-t border-gray-100 space-y-4">
                 <Link to="/track-order" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 text-gray-700 hover:text-yellow-600 font-medium">
                   <Package size={20} /> Track Your Order

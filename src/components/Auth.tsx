@@ -18,8 +18,9 @@ export default function Auth() {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <Link to="/" className="flex flex-col items-center mb-6">
-          <span className="text-yellow-500 font-serif font-bold text-3xl leading-none">PUREBAR</span>
-          <span className="text-yellow-500 text-xs tracking-widest">SOAP</span>
+          <img src="/logo.png" alt="Global Nest Logo" className="h-16 w-auto mb-3" />
+          <span className="text-yellow-500 font-serif font-bold text-3xl leading-none">GLOBAL</span>
+          <span className="text-yellow-500 text-xs tracking-widest">NEST</span>
         </Link>
         <h2 className="text-center text-3xl font-serif font-bold text-gray-900">
           {isLogin ? 'Welcome Back' : 'Create Account'}

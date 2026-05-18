@@ -19,9 +19,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         {/* Contact */}
         <div>
-          <div className="flex flex-col mb-6">
-            <span className="text-yellow-500 font-serif font-bold text-3xl leading-none">PUREBAR</span>
-            <span className="text-yellow-500 text-sm tracking-widest">SOAP</span>
+          <div className="flex items-center gap-3 mb-6">
+            <img src="/logo.png" alt="Global Nest Logo" className="h-12 w-auto" />
           </div>
           <h4 className="font-bold text-lg mb-4 text-black">Contact</h4>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed">
@@ -38,7 +37,7 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-lg mb-4 text-black">About Us</h4>
           <ul className="space-y-3 text-sm text-gray-500">
-            <li><Link to="/" className="hover:text-black">About PureBar</Link></li>
+            <li><Link to="/" className="hover:text-black">About Global Nest</Link></li>
             <li><a href="#" className="hover:text-black">Contact Us</a></li>
             <li><a href="#" className="hover:text-black">Career</a></li>
             <li><a href="#" className="hover:text-black">News & Events</a></li>
@@ -73,7 +72,7 @@ export default function Footer() {
 
         {/* Apps & Updates */}
         <div>
-          <h4 className="font-bold text-lg mb-4 text-black">Download PureBar App Now!</h4>
+          <h4 className="font-bold text-lg mb-4 text-black">Download Global Nest App Now!</h4>
           <div className="flex flex-col sm:flex-row gap-3 mb-10">
             <a href="#" className="bg-black text-white px-4 py-2 rounded-md flex items-center space-x-2">
               <span className="text-xl">▶</span>
@@ -101,10 +100,10 @@ export default function Footer() {
             </div>
           ) : (
             <form onSubmit={handleSubscribe} className="flex bg-white rounded-md overflow-hidden border border-gray-200">
-              <input 
-                type="email" 
+              <input
+                type="email"
                 required
-                placeholder="Your email address" 
+                placeholder="Your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="px-4 py-3 flex-1 text-sm outline-none w-full"
@@ -119,7 +118,7 @@ export default function Footer() {
 
 
       <div className="text-center text-sm text-gray-500 pt-8 border-t border-gray-200">
-        Copyright 2026 © PureBar Organic Soaps.
+        Copyright 2026 © Global Nest Organic Soaps.
       </div>
     </footer>
   );

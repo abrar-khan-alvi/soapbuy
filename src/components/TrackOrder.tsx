@@ -42,7 +42,7 @@ export default function TrackOrder() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-serif font-bold text-gray-900 mb-4">Track Your Order</h1>
-          <p className="text-gray-500">Enter your order ID to see the real-time status of your PureBar shipment.</p>
+          <p className="text-gray-500">Enter your order ID to see the real-time status of your Global Nest shipment.</p>
         </div>
 
         {/* Search Bar */}
