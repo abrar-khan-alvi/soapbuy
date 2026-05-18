@@ -136,7 +136,7 @@ function MediaLogos() {
       </div>
       
       <p className="text-gray-400 mt-8 md:mt-12 text-sm md:text-lg font-serif italic px-6">
-        PureBar recognized across 700+ global media outlets
+        Global Nest recognized across 700+ global media outlets
       </p>
     </section>
   );
@@ -505,7 +505,7 @@ function StoreInfo() {
 function UniverseSection() {
   const steps = [
     { title: 'Near You, For You', desc: 'Explore our 20+ branches across Bangladesh—your soap journey starts close to home.', btn: 'Explore Branches', img: 'https://images.unsplash.com/photo-1556228578-0d8566270cd1?auto=format&fit=crop&q=80&w=600' },
-    { title: 'Moments That Inspire', desc: 'Celebrate milestones, campaigns and the journey of impact with PureBar Soap.', btn: 'News & Events', img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600' },
+    { title: 'Moments That Inspire', desc: 'Celebrate milestones, campaigns and the journey of impact with Global Nest.', btn: 'News & Events', img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600' },
     { title: 'Glow With Knowledge', desc: 'Discover expert cleansing tips, myths and seasonal guides tailored to you.', btn: 'Read Our Blog', img: 'https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&q=80&w=600' },
     { title: 'Grow With Purpose', desc: 'Join a women-led revolution in organic soaps, innovation and leadership.', btn: 'Career', img: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=600' },
   ];
@@ -513,7 +513,7 @@ function UniverseSection() {
   return (
     <section className="py-20 bg-[#fcfcfc]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-serif text-4xl mb-4">Step Into the PureBar Universe</h2>
+        <h2 className="font-serif text-4xl mb-4">Step Into the Global Nest Universe</h2>
         <p className="text-gray-500 mb-16">Explore how we empower beauty, elevate careers and build trust across Bangladesh</p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
